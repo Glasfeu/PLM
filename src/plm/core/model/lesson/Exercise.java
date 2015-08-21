@@ -1,10 +1,6 @@
 package plm.core.model.lesson;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -24,6 +20,7 @@ import plm.core.model.Game;
 import plm.core.model.LogWriter;
 import plm.core.model.session.SourceFile;
 import plm.core.model.session.SourceFileRevertable;
+import plm.core.utils.FileUtils;
 import plm.universe.World;
 
 
@@ -101,26 +98,13 @@ public abstract class Exercise extends Lecture {
 
 				if (!currentWorld.get(i).winning(answerWorld.get(i))) {
 					for(int j = 0 ; j < commonErrors.size() ; j++) {
-						//System.out.println(currentWorld.size()+" > "+commonErrors.size()+" - "+commonErrors.get(j).size());
-						if(currentWorld.get(i).winning((commonErrors.get(j)).get(i))) {
-							String[] brokenPath = this.getLocalId().split("\\.");
-							String path = "src/";
-							for(int k = 0 ; k < brokenPath.length ; k++) {
-								if(brokenPath.length-1 != k) {
-									path += brokenPath[k]+"/";
-								} else {
-									path += brokenPath[k];
-								}
-							}
-							InputStream is;
+						if(currentWorld.get(i).winning((commonErrors.get(j)).get(i))) { //winning do an equals, but it is the same
+							String path = Game.JAVA.nameOfCommonError(this, j).replaceAll("\\.", "/");
 							try {
-								is = new FileInputStream(path+"CommonErr"+j+".html");
-								InputStreamReader lect = new InputStreamReader(is);
-								BufferedReader buf = new BufferedReader(lect);
-								String error = "Hint: ";
-								error += buf.readLine();
-								lastResult.executionError += "\n"+error+"\n\n------------------------------------------\n\n";
-								buf.close();
+								StringBuffer sb = FileUtils.readContentAsText(path, "html", true);
+								lastResult.executionError = "\nHint : ";
+								lastResult.executionError += sb.toString();
+								lastResult.executionError += "\n------------------------------------------\n\n";
 							} catch (IOException e) {
 								e.printStackTrace();
 							} 

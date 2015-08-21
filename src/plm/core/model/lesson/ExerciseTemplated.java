@@ -330,16 +330,13 @@ public abstract class ExerciseTemplated extends Exercise {
 	}
 	protected <W extends World> void setup(W[] ws) {
 		boolean foundALanguage=false;
-		ArrayList<File> f = new ArrayList<File>();
-		ProgrammingLanguage lang2 = Game.JAVA;
+		ArrayList<String> files = new ArrayList<String>();
 		int k = 0;
-		while((new File("src/"+lang2.nameOfCommonError(this, k).replaceAll("\\.", "/")+".java")).exists()) {
-			if(!f.contains(new File(lang2.nameOfCommonError(this, k)))) {
-				f.add(new File(lang2.nameOfCommonError(this, k)));
-			}
+		while(getClass().getResourceAsStream("/"+Game.JAVA.nameOfCommonError(this, k).replaceAll("\\.", "/")+".java")!=null) {
+			files.add("/"+Game.JAVA.nameOfCommonError(this, k).replaceAll("\\.", "/")+".java");
 			k++;
 		}
-		setupWorlds(ws,f.size());
+		setupWorlds(ws,files.size());
 		for (ProgrammingLanguage lang: Game.getProgrammingLanguages()) {
 			boolean foundThisLanguage = false;
 			String searchedName = null;
@@ -384,13 +381,13 @@ public abstract class ExerciseTemplated extends Exercise {
 			throw new RuntimeException(Game.i18n.tr("{0}: No entity found. You should fix your paths and such",getName()));
 
 		computeAnswer();
-		computeError(f);
+		computeError(files);
 	}
 
-	protected void computeError(ArrayList<File> f) {
-		for(int i = 0 ; i < f.size(); i++) {
-			final int i2 = i;
-			if(new File("src/"+f.get(i).getPath().replaceAll("\\.", "/")+".java").exists()) {
+	protected void computeError(ArrayList<String> files) {
+		for(int i = 0 ; i < files.size(); i++) {
+			 final int copyOfi = i;
+			 if(getClass().getResourceAsStream(files.get(i))!=null) {
 				Thread.UncaughtExceptionHandler h = new Thread.UncaughtExceptionHandler() {
 
 					@Override
@@ -406,8 +403,8 @@ public abstract class ExerciseTemplated extends Exercise {
 					public void run() {
 						Game.getInstance().statusArgAdd(getClass().getSimpleName());
 						ExecutionProgress progress = new ExecutionProgress();
-						mutateEntities(WorldKind.ERROR, StudentOrCorrection.ERROR, i2);
-						Vector<World> errorWorld = commonErrors.get(i2);
+						mutateEntities(WorldKind.ERROR, StudentOrCorrection.ERROR, copyOfi);
+						Vector<World> errorWorld = commonErrors.get(copyOfi);
 						for(World ew : errorWorld) {
 							for(Entity ent : ew.getEntities()) {
 								Game.JAVA.runEntity(ent, progress);

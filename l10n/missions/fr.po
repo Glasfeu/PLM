@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PLM mission texts\n"
-"POT-Creation-Date: 2015-05-03 20:55+0200\n"
-"PO-Revision-Date: 2015-03-19 18:14+0100\n"
+"POT-Creation-Date: 2015-08-21 11:27+0200\n"
+"PO-Revision-Date: 2015-08-21 11:36+0100\n"
 "Last-Translator: Martin Quinson\n"
 "Language-Team: French <>\n"
 "Language: fr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 1.7.5\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #. type: Content of: <h1>
 #: src/plm/universe/bugglequest/BuggleWorld.html:2
@@ -2523,6 +2523,66 @@ msgstr ""
 msgid "It's your turn now!"
 msgstr "À vous de jouer !"
 
+#. type: Content of: outside any tag (error?)
+#: src/lessons/welcome/variables/VariablesCommonErr0.html:1
+msgid "Don't reinitialize your step values each time you enter in the loop !"
+msgstr ""
+"Ne réinitialisez pas votre valeur de pas à chaque fois que vous entrez dans "
+"votre boucle !"
+
+#. type: Content of: outside any tag (error?)
+#: src/lessons/welcome/variables/VariablesCommonErr1.html:1
+msgid ""
+"Don't forget to count how many forward steps you do in order to know how "
+"many backward steps you have to do to return back to the original place..."
+msgstr ""
+"N'oubliez pas de compter le nombre de pas en avant pour savoir combien de "
+"pas en arrière il va falloir faire pour retourner à la place originelle..."
+
+#. type: Content of: outside any tag (error?)
+#: src/lessons/welcome/variables/VariablesCommonErr2.html:1
+msgid "Don't forget to take the baggle and to put it to the starting point !"
+msgstr ""
+"N'oubliez pas de ramasser le biscuit et de le déposer au point de départ !"
+
+#. type: Content of: outside any tag (error?)
+#: src/lessons/welcome/variables/VariablesCommonErr3.html:1
+msgid ""
+"You need to use variables to get to the solution, in order to count the "
+"number of steps you do to arrive to the baggle, to know how many steps you "
+"have to do to return back to your home."
+msgstr ""
+"Vous devez utiliser une ou plusieurs variables pour arriver à la solution. "
+"Cela sert à compter le nombre de pas que fait la buggle pour atteindre le "
+"biscuit et pour savoir combien de pas elle doit faire pour retourner chez "
+"elle. "
+
+#. type: Content of: outside any tag (error?)
+#: src/lessons/welcome/variables/VariablesCommonErr4.html:1
+msgid ""
+"Don't forget to drop your baggle once you are arrived to the starting point!"
+msgstr ""
+"N'oubliez pas de déposer votre biscuit quand vous arrivez au point de "
+"départ !"
+
+#. type: Content of: outside any tag (error?)
+#: src/lessons/welcome/variables/VariablesCommonErr5.html:1
+msgid ""
+"You just have to return back to the original place now. Did you count how "
+"many steps you did to come here?"
+msgstr ""
+"Il ne reste plus qu'à retourner au point de départ. Avez-vous bien compté le "
+"nombre de pas faits pour arriver ici ?"
+
+#. type: Content of: outside any tag (error?)
+#: src/lessons/welcome/variables/VariablesCommonErr6.html:1
+msgid ""
+"You need to do as many backward steps as you did forward steps. And don't "
+"forget to drop your baggle..."
+msgstr ""
+"Vous devez faire autant de pas en arrière que de pas en avant. Et n'oubliez "
+"pas de déposer votre biscuit..."
+
 #. type: Content of: <h2>
 #: src/lessons/welcome/variables/RunFour.html:2
 msgid "Run Four bases"
@@ -2842,6 +2902,19 @@ msgstr ""
 "nouvelle demeure.\n"
 "Chemin faisant, les couleurs apparaissent d'elles-mêmes sans que vous n'ayez "
 "rien à faire."
+
+#. type: Content of: outside any tag (error?)
+#: src/lessons/welcome/loopfor/LoopStairsCommonErr0.html:1
+msgid ""
+"Don't forget to go forward to the first step of the stairs before climbing "
+"it!"
+msgstr ""
+"Pensez à avancer jusqu'à la première marche avant d'essayer de grimper !"
+
+#. type: Content of: outside any tag (error?)
+#: src/lessons/welcome/loopfor/LoopStairsCommonErr1.html:1
+msgid "You just have to walk three steps forward to finish this exercise."
+msgstr "Il ne reste plus qu'à avancer de trois pas pour finir cet exercice !"
 
 #. type: Content of: <h2>
 #: src/lessons/welcome/loopfor/LoopCourse.html:2
@@ -5318,6 +5391,25 @@ msgstr ""
 "Quand votre fonction <tt>haveBaggle</tt> fonctionne, passez à l'exercice "
 "suivant."
 
+#. type: Content of: outside any tag (error?)
+#: src/lessons/welcome/methods/returning/MethodsReturningCommonErr0.html:1
+msgid ""
+"You do not check if you saw a baggle or not at every step you did. Check "
+"your line that changes the result boolean."
+msgstr ""
+"Vous ne vérifiez pas si vous avez vu ou non un biscuit à tous les pas "
+"d'exécution. Ajustez la ligne qui change le booléen du résultat. "
+
+#. type: Content of: outside any tag (error?)
+#: src/lessons/welcome/methods/returning/MethodsReturningCommonErr1.html:1
+msgid ""
+"You don't have to stop over the baggle. Remember your method to know how "
+"many steps you have to do backward in another exercise... ;)"
+msgstr ""
+"Vous ne devez pas vous arrêter sur le biscuit. Souvenez-vous de la méthode "
+"qui compte le nombre de pas à faire en arrière que vous avez écrite dans un "
+"autre exercice... ;)"
+
 #. type: Content of: <p>
 #: src/lessons/welcome/methods/args/MethodsArgs.html:4
 msgid ""
@@ -7381,6 +7473,15 @@ msgstr ""
 "et vous pouvez tout à fait le laisser momentanément de coté pour y revenir "
 "plus tard si vous n'y parvenez pas pour l'instant."
 
+#. type: Content of: outside any tag (error?)
+#: src/lessons/welcome/summative/MoriaCommonErr0.html:1
+msgid ""
+"You should not put another while loop outside from you main loop that checks "
+"if the buggle is facing a wall..."
+msgstr ""
+"Vous ne devriez pas écrire une boucle while hors de la boucle principale "
+"(celle qui vérifie la présence d'un mur). "
+
 #. type: Content of: <h3>
 #: src/lessons/turmites/Main.html:2 src/lessons/turmites/short_desc.html:2
 msgid "The turmites"
@@ -8810,9 +8911,16 @@ msgstr ""
 
 #. type: Content of: <p>
 #: src/lessons/sort/basic/bubble/AlgBubbleSort3.html:9
+#, fuzzy
+#| msgid ""
+#| "[!java|python|c]For that, simply use the <code>break</code> keyword, "
+#| "which breaks the current loop.  Beware, if you have several embedded "
+#| "loops, this will apply to the internal one.[/!] [!scala]For that, simply "
+#| "quit the current function by calling <code>return</code> with no "
+#| "associated value.[/!]"
 msgid ""
 "[!java|python|c]For that, simply use the <code>break</code> keyword, which "
-"breaks the current loop.  Beware, if you have several embedded loops, this "
+"breaks the current loop.  Beware, if you have several nested loops, this "
 "will apply to the internal one.[/!] [!scala]For that, simply quit the "
 "current function by calling <code>return</code> with no associated value.[/!]"
 msgstr ""
@@ -9286,12 +9394,24 @@ msgstr "Tri à peigne"
 
 #. type: Content of: <p>
 #: src/lessons/sort/basic/comb/AlgCombSort.html:4
+#, fuzzy
+#| msgid ""
+#| "We saw that CocktailSort improve a bit for turtles (i.e. small values "
+#| "near to the end of the array), but it is still possible to achieve "
+#| "better. ComboSort comes down to providing them a short cut: instead of "
+#| "comparing adjacent values, we compare values separated by a gap bigger "
+#| "than 1. That way, turtles we traverse <i>gap</i> cells at each traversal. "
+#| "Naturally, we have to apply the algorithm with decreasing gaps, and "
+#| "finish with <i>gap=1</i> to ensure that the array is correctly sorted "
+#| "afterward. Choosing the right gap and how to decrease it is a difficult "
+#| "question, but in practice, dividing it by 1.3 after each traversal leads "
+#| "to good performance. Here is the corresponding pseudo-code:"
 msgid ""
 "We saw that CocktailSort improve a bit for turtles (i.e. small values near "
 "to the end of the array), but it is still possible to achieve better. "
 "ComboSort comes down to providing them a short cut: instead of comparing "
 "adjacent values, we compare values separated by a gap bigger than 1. That "
-"way, turtles we traverse <i>gap</i> cells at each traversal. Naturally, we "
+"way, turtles will traverse <i>gap</i> cells at each traversal. Naturally, we "
 "have to apply the algorithm with decreasing gaps, and finish with <i>gap=1</"
 "i> to ensure that the array is correctly sorted afterward. Choosing the "
 "right gap and how to decrease it is a difficult question, but in practice, "
@@ -10124,11 +10244,20 @@ msgstr ""
 
 #. type: Content of: <p>
 #: src/lessons/sort/pancake/GatesPancake.html:9
+#, fuzzy
+#| msgid ""
+#| "The basic idea is to grow sequences of sorted pancakes, not necessarily "
+#| "starting from the bottom.  We say that a sequence of ordered pancakes "
+#| "constitute a <b>bloc</b> while a pancake that is not part of a bloc is "
+#| "said to be <b>free</b>. The algorithm then considers the topmost pancake "
+#| "(of radius <code>t</code>) and search for the <code>t+1</code> or "
+#| "<code>t-1</code> pancakes (the considered neighbor is noted <code>t+o</"
+#| "code>). Eight cases may happen:"
 msgid ""
 "The basic idea is to grow sequences of sorted pancakes, not necessarily "
 "starting from the bottom.  We say that a sequence of ordered pancakes "
-"constitute a <b>bloc</b> while a pancake that is not part of a bloc is said "
-"to be <b>free</b>. The algorithm then considers the topmost pancake (of "
+"constitute a <b>block</b> while a pancake that is not part of a block is "
+"said to be <b>free</b>. The algorithm then considers the topmost pancake (of "
 "radius <code>t</code>) and search for the <code>t+1</code> or <code>t-1</"
 "code> pancakes (the considered neighbor is noted <code>t+o</code>). Eight "
 "cases may happen:"
@@ -10161,9 +10290,16 @@ msgstr ""
 
 #. type: Content of: <ul><li>
 #: src/lessons/sort/pancake/GatesPancake.html:25
+#, fuzzy
+#| msgid ""
+#| "<b>Case c</b>: <code>t</code> is free but both <code>t-1</code> and "
+#| "<code>t+1</code> are the last elements of blocks.  Both blocs and "
+#| "<code>t</code> are merged all together in 4 flips.  Beware, if either "
+#| "<code>t-1</code> or <code>t+1</code> does not exist (because <code>t</"
+#| "code> is 0 or max), only two flips are mandated."
 msgid ""
 "<b>Case c</b>: <code>t</code> is free but both <code>t-1</code> and <code>t"
-"+1</code> are the last elements of blocks.  Both blocs and <code>t</code> "
+"+1</code> are the last elements of blocks.  Both blocks and <code>t</code> "
 "are merged all together in 4 flips.  Beware, if either <code>t-1</code> or "
 "<code>t+1</code> does not exist (because <code>t</code> is 0 or max), only "
 "two flips are mandated."
@@ -12670,8 +12806,15 @@ msgstr ""
 
 #. type: Content of: <p>
 #: src/lessons/recursion/lego/koch/HexaKoch.html:8
+#, fuzzy
+#| msgid ""
+#| "For the record, the origical Koch curve is the (3, 1/3)-Koch curve, the "
+#| "Snow square would be (4,1/3)-Koch curve while the Snow pentagon is also "
+#| "called the (5, 0.4)-Koch curve. If you want, you can switch to the "
+#| "creative mode in the menu and explore freely other Koch curves. Just "
+#| "change the initial call to hexaKoch to what you want."
 msgid ""
-"For the record, the origical Koch curve is the (3, 1/3)-Koch curve, the Snow "
+"For the record, the original Koch curve is the (3, 1/3)-Koch curve, the Snow "
 "square would be (4,1/3)-Koch curve while the Snow pentagon is also called "
 "the (5, 0.4)-Koch curve. If you want, you can switch to the creative mode in "
 "the menu and explore freely other Koch curves. Just change the initial call "
@@ -12730,12 +12873,18 @@ msgstr "Note bibliographique"
 
 #. type: Content of: <p>
 #: src/lessons/recursion/lego/koch/Crab.html:11
+#, fuzzy
+#| msgid ""
+#| "This curve, also called the Lévy C curve was invented in 1938 by the "
+#| "French mathematician Paul Lévy in 1938.  As usual, the wikipedia page is "
+#| "very instructive, and the page provide a very good additions: <a href="
+#| "\"http://www.mathcurve.com/fractals/c/c.shtml\">http://www.mathcurve.com/"
+#| "fractals/c/c.shtml</a>."
 msgid ""
 "This curve, also called the Lévy C curve was invented in 1938 by the French "
-"mathematician Paul Lévy in 1938.  As usual, the wikipedia page is very "
-"instructive, and the page provide a very good additions: <a href=\"http://"
-"www.mathcurve.com/fractals/c/c.shtml\">http://www.mathcurve.com/fractals/c/c."
-"shtml</a>."
+"mathematician Paul Lévy.  As usual, the wikipedia page is very instructive, "
+"and the page provide very good additions: <a href=\"http://www.mathcurve.com/"
+"fractals/c/c.shtml\">http://www.mathcurve.com/fractals/c/c.shtml</a>."
 msgstr ""
 "Cette courbe, également appelée la courbe C de Lévy, a été inventée en 1938 "
 "par le mathématicien Français Paul Lévy. Comme souvent, la page Wikipedia "
@@ -13830,11 +13979,17 @@ msgstr "Ce premier indice n'était pas suffisant"
 
 #. type: Content of: <div>
 #: src/lessons/recursion/hanoi/LinearHanoi.html:21
+#, fuzzy
+#| msgid ""
+#| "The standard recursive algorithm for classical Hanoi involves two "
+#| "recursive calls sandwiching one movement of the largest ring, the "
+#| "standard recursive algorithm for Linear Hanoi involves three recursive "
+#| "calls sandwiched around two movements of the same ring."
 msgid ""
 "The standard recursive algorithm for classical Hanoi involves two recursive "
-"calls sandwiching one movement of the largest ring, the standard recursive "
+"calls sandwiching one movement of the largest disk, the standard recursive "
 "algorithm for Linear Hanoi involves three recursive calls sandwiched around "
-"two movements of the same ring."
+"two movements of the same disk."
 msgstr ""
 "L'algorithme récursif habituel pour le problème classique des tours de Hanoï "
 "implique deux appels récursifs enveloppant un mouvement du grand disque. "
